@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "01_Hello"
+		},
+		{
+			"path": "02_Condition"
+		},
+		{
+			"path": "03_Loops"
+		},
+		{
+			"path": "00_MyWork"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "03_Loops"
+	}
+}
