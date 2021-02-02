@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
       message: 'Hello Vue.js!',
-      inputMessage: 'tt'
+      inputMessage: 'Input Your Message'
     },
 
     methods: {
@@ -10,5 +10,4 @@ var app = new Vue({
         this.message = this.message.split('').reverse().join('')
       }
     }
-  });
-  
+  });  

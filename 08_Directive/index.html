@@ -1,19 +1,19 @@
+<!--index.html-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_Template</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>Document</title>
+    <!--or <script src="vue.js"></script> vue.js를 같이 보낸다. -->
 </head>
 <body>
     <div id="app">
-        <p>{{message}}</p>
-        <button v-on:click="reverseMessage">Reverse Message</button>
-
-        <p>{{inputMessage}}</p>
-        <input v-model="inputMessage">
+        <a v-bind:href="url">Link</a>
     </div>
     <script src="index.js"></script>
 </body>
 </html>
+
