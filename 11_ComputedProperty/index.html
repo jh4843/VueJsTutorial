@@ -13,8 +13,13 @@
     <div id="example">
         <p>Original message: "{{ message }}"</p>
         <p>Computed reversed message: "{{ reversedMessage }}"</p>
-        <p>{{now}}</p>
-        <p>{{methodnow()}}</p>
+        <p>computed property: {{now}}</p>
+        <p>method: {{methodnow()}}</p>
+        <br><br><br>
+        <p>{{firstName}}</br>
+        <p>{{lastName}}</p>
+        <p>{{fullName}}</p>
+        <p><input v-model="fullName"></p>
     </div>
     <script src="index.js"></script>
 </body>

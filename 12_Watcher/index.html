@@ -5,21 +5,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>06_Instance</title>
+    <title>07_Template</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
     <!--or <script src="vue.js"></script> vue.js를 같이 보낸다. -->
 </head>
 <body>
-    <div id="app">
+    <div id="watch-example">
         <p>
-            {{message_a}}
-            {{message_b}}
-            {{b}}
-            <input v-model="message_a">
+            Ask a yes/no question:
+            <input v-model="question">
         </p>
-
-    </div>
+        <p>{{ answer }}</p>
     <script src="index.js"></script>
+
 </body>
 </html>
 

@@ -15,8 +15,17 @@ var vm = new Vue({
         return this.message.split('').reverse().join('')
       },
 
-      fullName: function () {
-        return this.firstName + ' ' + this.lastName
+      fullName: {
+
+        get: function() {
+          return this.firstName + ' ' + this.lastName
+        },
+
+        set: function(newVal) {
+          var names = newVal.split(' ')
+          this.firstName = names[0]
+          this.lastName = names[names.length - 1]
+        }
       }
     },
 
