@@ -23,7 +23,7 @@ var vm = new Vue({
         },
 
         overridingStyles: {
-            color: 'yellow',
+            color: 'yellow'
         }
       }
 });
