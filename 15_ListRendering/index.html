@@ -1,0 +1,34 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--or <script src="vue.js"></script> vue.js를 같이 보낸다. -->
+</head>
+<body>
+    <ul id="example-1">
+        <li v-for="item in names" :key="item.message">
+            {{ item.message }}
+        </li>
+        <br>
+        <li v-for="(item, index) of items">
+            {{ parentMessage }} - {{ index }} - {{ item.message }}
+        </li>
+        <br>
+        <li v-for="value in object">
+            {{ value }}
+        </li>
+        <br>
+        <li v-for="(value, name, index) in object">
+            {{ index }}. {{ name }}: {{ value }}
+        </li>
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
