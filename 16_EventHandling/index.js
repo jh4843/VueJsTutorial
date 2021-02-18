@@ -22,7 +22,25 @@ var example1 = new Vue({
               alert('event is null')
             }
             alert(message)
+        },
+
+        doThis: function (event) {
+          // now we have access to the native event
+          if (event) {
+            event.preventDefault()
+            alert('event is null')
+          }
+          alert('do This')
+      },
+
+      onScroll: function (event) {
+        // now we have access to the native event
+        if (event) {
+          event.preventDefault()
+          alert('event is null')
         }
+        alert('onScroll')
+    }
     }
       
   })
